@@ -1,13 +1,13 @@
-int itc_rev_oct_num(long long number)
-{
-    int a = 0, b = 0, f = 8;
-    while (number)
-    {
-        for (int i = 0; i < b; i++)
-            f *= b;
-        a += number % 10 * f;
+#include "middle.h"
+int itc_rev_oct_num(long long number) {
+    int a = 0;
+    int power = 0;
+
+    while (number > 0) {
+        int b = number % 10;
+        a += b * itc_pow(8, power);
+        power++;
         number /= 10;
-        b ++;
     }
 
     return a;

@@ -1,5 +1,7 @@
 int itc_second_simple_max_num(long long number) 
 {
+    if (number < 0)
+        number *= -1;
     if (number > 9)
     {
         int max = -1;
