@@ -4,7 +4,7 @@ int itc_len_num(long long number)
 	while(number)
 	{
 		lenOfRaz++;
-		number  =/ 10;
+		number  = number / 10;
 	}
 	return lenOfRaz;
 }
