@@ -12,7 +12,7 @@ bool itc_mirror_num(long long number)
 	}
 	for (int i = 0; i < y; i++) 
 		z *= 10;
-	while (number != 0)
+	while (number)
 	{
 		int a = number % 10;
 		mirror += z * a;
