@@ -5,7 +5,7 @@ long long itc_multi_num(long long number)
 		number *= -1;
 	if (number == 0)
 		return 0;
-	while (number != 0)
+	while (number)
 	{
 		mult *= number % 10;
 		number /= 10;
