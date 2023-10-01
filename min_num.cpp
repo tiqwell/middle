@@ -5,7 +5,7 @@ int itc_min_num(long long number)
 		return 0;
 	if (number < 0)
 		number *= -1;
-	while (number != 0)
+	while (number)
 	{
 		if (min > number % 10)
 			min = number % 10;
