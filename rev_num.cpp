@@ -1,12 +1,14 @@
 #include "middle.h"
-int itc_rev_num(long long num) {
-	int sum = 0;
-	if (num < 0)
-		num *= -1;
-	while (num != 0)
+int itc_rev_num(long long number) {
+	long long a = 0;
+	if (number < 0) 
+		number *= -1; 
+	while (number = number /10) 
 	{
-		sum += num % 10;
-		num /= 10;
+		int i = number % 10;
+		a = a * 10 + (i * 10);
 	}
-	return sum;
+	a /= 10;
+	return itc_len_num(a);
+
 }
